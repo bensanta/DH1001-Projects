@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--    linking css stylesheet - https://www.w3schools.com/html/html_css.asp-->
+    <link rel="stylesheet" href="mainStyles.css">
 <title>Ben Santa's DH web page</title>
+
+
 </head>
-<style>
-    img {
-  display: block;
-  margin: auto;
-  width: 50%;
 
-}
-</style>
-<body>
+<body style="background-color: lavender">
 
-
-<h1>This is my webpage for DH1001</h1>
+<!--align center https://www.w3schools.com/tags/tag_center.ASP-->
+<h1 style="text-align: center">Benjamin Sánta's Digital Portfolio</h1>
 <p>This is the first line of my digital portfolio</p>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/D%C3%BClmen%2C_Kirchspiel%2C_ehem._Sondermunitionslager_Visbeck%2C_Bunker_26_--_2024_--_5531-5.jpg/1000px-D%C3%BClmen%2C_Kirchspiel%2C_ehem._Sondermunitionslager_Visbeck%2C_Bunker_26_--_2024_--_5531-5.jpg"
-     alt="picture of an open gate" >
 
-<p> Above is a picture of a gate, taken from Wikipedia Commons</p>
 
-<a href="https://www.google.com"> This is a link to google.com</a>
 
-<a href="https://commons.wikimedia.org/wiki/File:Newtons_cradle_animation_book.gif"><img width="256" alt="An image of Newton&#039;s pendulum, a system that illustrates a basic concept in classical mechanics, which is the principle of conservation of momentum and energy." src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Newtons_cradle_animation_book.gif?20060808122030"></a>
+<div class="container">
+<!--    source for buttons - https://www.w3schools.com/tags/tag_button.asp-->
+<!--    combining links and buttons https://www.reddit.com/r/html5/comments/u7o29l/comment/i5hc416/ -->
+  <div class="top-row-round"><a href="anatomy-of-an-ai-system.html"><button>Anatomy of an AI system discussion response</button></a></div>
+
+  <div><a href="the-internets-own-boy.html"><button>The Internet's Own Boy</button></a></div>
+<!--    how to use details https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details-->
+  <div> <details style="font-size: 12pt" class="details-animation"> <summary style="font-size: 15pt">Details</summary> Something small enough to escape casual notice.</details> </div>
+  <div>4</div>
+  <div class="bottom-row-round">5</div>
+</div>
 
 
 </body>

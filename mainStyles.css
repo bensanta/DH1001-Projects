@@ -1,0 +1,49 @@
+/*set a specific font for the whole page - https://stackoverflow.com/a/7025794*/
+body {
+    font: normal 10px Verdana, Arial, sans-serif;
+}
+
+
+.container {
+    /* rounding from w3 schools - https://www.w3schools.com/css/css3_borders.asp */
+    border-radius: 30px;
+    display: grid;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+.container div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* roundings */
+.top-row-round {
+    border-radius: 30px 30px 0 0;
+}
+
+.bottom-row-round {
+    border-radius: 0 0 30px 30px;
+}
+
+/* within the container, all buttons have this applied */
+.container button {
+    font-size: 12pt;
+}
+
+/* details (collapsing section) formatting - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details */
+.container details {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+.container summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
