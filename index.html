@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--    linking css stylesheet - https://www.w3schools.com/html/html_css.asp-->
+    <!--    linking css stylesheet - https://www.w3schools.com/html/html_css.asp-->
     <link rel="stylesheet" href="mainStyles.css">
-    <title>Ben Santa's DH web page</title>
+    <title>Ben Sánta's DH web page</title>
 
+    <!--    onest font - https://fonts.google.com/selection/embed-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--"generate a favicon for my digital portfolio and reference UCC DHIT, and make it
+        something fun but simple" prompt. ChatGPT, GPT-5 version, OpenAI, 2 Nov.
+        2025, chatgpt.com/share/69075819-ebbc-8003-92f8-53cbdc1ebcd5.-->
+    <!--How to do a favicon: https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel="icon" type="image/x-icon" href="static/favicon.png">
 </head>
 
 <body>
-
     <!--align center https://www.w3schools.com/tags/tag_center.ASP-->
     <h1 style="text-align: center">Benjamin Sánta's Digital Portfolio</h1>
-    <p>This is the first line of my digital portfolio</p>
+    <p style="text-align: center">This is the first line of my digital portfolio</p>
 
 
 
 
-    <div class="container">
-    <!--    source for buttons - https://www.w3schools.com/tags/tag_button.asp-->
-    <!--    combining links and buttons https://www.reddit.com/r/html5/comments/u7o29l/comment/i5hc416/ -->
-        <div class="top-row-round"><a href="anatomy-of-an-ai-system.html">
-            <button>Anatomy of an AI system discussion response</button></a>
-        </div>
-
-        <div>
-            <a href="the-internets-own-boy.html"><button>The Internet's Own Boy</button></a>
-        </div>
-
-        <div> <!--how to use details https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details-->
-            <details style="font-size: 12pt" class="details-animation">
-                <summary style="font-size: 15pt">
-                    Discussion response 3
-                </summary>
-                Lorem ipsum discussion response 3.
-            </details>
-        </div>
-        <div>
-            4
-        </div>
-        <div class="bottom-row-round"> <!-- round bottom corners-->
-            5
+    <!--Cards https://www.w3schools.com/howto/howto_css_cards.asp -->
+    <!--Flip Cards https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3>Discussion Response 1</h3>
+                <p>Response Summary - anim occaecat sit duis nisi non sunt
+                    eu do proident consequat enim non do non
+                    velit anim amet</p>
+            </div>
+            <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+            </div>
         </div>
     </div>
+
+
+
 
 
     <!--Todo: somewhere add in a reference list-->
