@@ -34,7 +34,8 @@ body {
     font-size: 12pt;
 }
 
-/* details (collapsing section) formatting - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details */
+/* details (collapsing section) formatting
+ - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details */
 .container details {
     border: 1px solid #000;
     border-radius: 4px;
