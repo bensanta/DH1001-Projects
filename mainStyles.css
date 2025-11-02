@@ -1,6 +1,17 @@
-/*set a specific font for the whole page - https://stackoverflow.com/a/7025794*/
+html, body { height: 100%; margin: 0; }
+
+html {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background: linear-gradient(to bottom right, #3333cc 0%, #9900cc 100%);
+}
+
 body {
-    font: normal 10px Verdana, Arial, sans-serif;
+    /* gradients: https://www.w3schools.com/colors/colors_gradient.asp */
+    background: transparent;
+    color: #fdfcf3; /* nice lil off-white */
+    font: normal 10px Verdana, Arial, sans-serif; /*set a specific font for the whole page - https://stackoverflow.com/a/7025794*/
 }
 
 
@@ -33,6 +44,20 @@ body {
 .container button {
     font-size: 12pt;
 }
+
+/*Pill buttons: https://www.w3schools.com/howto/howto_css_pill_button.asp*/
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+
 
 /* details (collapsing section) formatting
  - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details */
