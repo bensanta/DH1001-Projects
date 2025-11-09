@@ -1,54 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!--    linking css stylesheet - https://www.w3schools.com/html/html_css.asp-->
-    <link rel="stylesheet" href="mainStyles.css">
-    <title>Ben Sánta's DH web page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ben Sánta's DH web page</title>
 
-    <!--    onest font - https://fonts.google.com/selection/embed-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
-
-    <!--"generate a favicon for my digital portfolio and reference UCC DHIT, and make it
-        something fun but simple" prompt. ChatGPT, GPT-5 version, OpenAI, 2 Nov.
-        2025, chatgpt.com/share/69075819-ebbc-8003-92f8-53cbdc1ebcd5.-->
-    <!--How to do a favicon: https://www.w3schools.com/html/html_favicon.asp -->
-    <link rel="icon" type="image/x-icon" href="static/favicon.png">
+<!--    Onest Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap" rel="stylesheet">
+<!-- Site's Favicon-->
+  <link rel="icon" type="image/png" href="static/favicon.png">
+  <link rel="stylesheet" href="mainStyles.css">
 </head>
-
 <body>
-    <!--align center https://www.w3schools.com/tags/tag_center.ASP-->
-    <h1 style="text-align: center">Benjamin Sánta's Digital Portfolio</h1>
-    <p style="text-align: center">This is the first line of my digital portfolio</p>
 
+  <header class="header">
+    <h1>Benjamin Sánta's Digital Portfolio</h1>
+    <p>Student Number: 125724165 </p>
+    <p>Course Info: CK118 AY25/26. DH1001 Discussion Portfolio</p>
+  </header>
 
-
-
-    <!--Cards https://www.w3schools.com/howto/howto_css_cards.asp -->
-    <!--Flip Cards https://www.w3schools.com/howto/howto_css_flip_card.asp -->
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3>Discussion Response 1</h3>
-                <p>Response Summary - anim occaecat sit duis nisi non sunt
-                    eu do proident consequat enim non do non
-                    velit anim amet</p>
-            </div>
-            <div class="flip-card-back">
-                <h1>John Doe</h1>
-                <p>Architect & Engineer</p>
-                <p>We love that guy</p>
-            </div>
+  <section class="cards">
+    <!-- Card 1 -->
+    <article class="flip-card"> <!-- Article info: https://www.w3schools.com/tags/tag_article.asp -->
+      <div class="flip-card-inner">
+        <div class="flip-face flip-card-front">
+          <h3>Discussion Response 1</h3>
+          <p>Response summary text goes here. Keep it to two lines.</p>
         </div>
-    </div>
+        <div class="flip-face flip-card-back">
+          <h3>Discussion Response 1</h3>
+          <p class="small">Written on: 2025/10/02</p>
+          <button class="button"><a href="the-internets-own-boy.html">Open response</a></button>
+<!--           how to buttons: https://www.w3schools.com/tags/tag_button.asp -->
+        </div>
+      </div>
+    </article>
 
+    <article class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-face flip-card-front">
+          <h3>Discussion Response 2</h3>
+          <p>Short summary for response two.</p>
+        </div>
+        <div class="flip-face flip-card-back">
+          <h3>Discussion Response 2</h3>
+          <p class="small">Written on: 2025/10/02</p>
+          <button class="button">Open response</button>
+        </div>
+      </div>
+    </article>
 
+    <article class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-face flip-card-front">
+          <h3>Discussion Response 3</h3>
+          <p>Short summary for response three.</p>
+        </div>
+        <div class="flip-face flip-card-back">
+          <h3>Discussion Response 3</h3>
+          <p class="small">Written on: 2025/10/02</p>
+          <button class="button">Open response</button>
+        </div>
+      </div>
+    </article>
 
+    <article class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-face flip-card-front">
+          <h3>Discussion Response 4</h3>
+          <p>Short summary for response four.</p>
+        </div>
+        <div class="flip-face flip-card-back">
+          <h3>Discussion Response 4</h3>
+          <p class="small">Written on: 2025/10/02</p>
+          <button class="button">Open response</button>
+        </div>
+      </div>
+    </article>
 
+    <article class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-face flip-card-front">
+          <h3>Discussion Response 5</h3>
+          <p>Short summary for response five.</p>
+        </div>
+        <div class="flip-face flip-card-back">
+          <h3>Discussion Response 5</h3>
+          <p class="small">Written on: 2025/10/02</p>
+          <button class="button">Open response</button>
+        </div>
+      </div>
+    </article>
 
-    <!--Todo: somewhere add in a reference list-->
+    <article class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-face flip-card-front">
+          <h3>Discussion Response 6</h3>
+          <p>Short summary for response six.</p>
+        </div>
+        <div class="flip-face flip-card-back">
+          <h3>Discussion Response 6</h3>
+          <p class="small">Written on: 2025/10/02</p>
+          <button class="button">Open response</button>
+        </div>
+      </div>
+    </article>
+  </section>
 
 </body>
 </html>
-
