@@ -1,8 +1,14 @@
+/* Disclaimer: Some Generative AI was used for bug fixes and styling, however only the basics. The rest is my very own
+doing. It's essential to state that all text is my own / human written.
+ */
+
 /* Base */
+/* https://www.freecodecamp.org/news/what-is-box-sizing-border-box-css/ */
 *,
 *::before,
 *::after { box-sizing: border-box; }
 
+/*setting variables used later on*/
 :root{
   --bg1:#3333cc;
   --bg2:#9900cc;
@@ -10,11 +16,12 @@
   --text:#0b1020;
   --accent:#1e90ff;
   --radius:16px;
-  --shadow:0 6px 20px rgba(0,0,0,.15);
+  --shadow:0 6px 20px rgba(0,0,0,.15); /* https://stackoverflow.com/questions/49837858/css-custom-properties-in-box-shadow-color-function-render-incorrectly-in-safari */
 }
 
 html,body{height:100%;margin:0}
 html{
+  /* Gradient:  https://www.w3schools.com/css/css3_gradients.asp */
   background: linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 100%);
   background-attachment: fixed;
 }
@@ -25,16 +32,17 @@ body{
 }
 
 /* Header */
-.header{ text-align:center; margin:56px 0 8px; color:#fff; }
-.header h1{ margin:0 0 8px; font-size:clamp(28px,4vw,40px); font-weight:800; }
-.header p{ margin:0; opacity:.9; }
+.header { text-align:center; margin:56px 0 8px; color:#fff; }
+.header h1 { margin:0 0 8px; font-size:clamp(28px,4vw,40px); font-weight:800; }
+.header p { margin:0; opacity:.9; }
+
+
 
 /*styling for the responses*/
-
 .response p{
-    font-size: 16pt;        /* A comfortable size for reading */
-    line-height: 1.5;       /* Spacing between lines of text (important!) */
-    color: #fff;            /* Dark gray for good contrast */
+    font-size: 14pt;
+    line-height: 1.5;       /* Spacing between lines */
+    color: #fff;
     /* margins left right*/
     margin-right: 35pt;
     margin-left: 35pt;
@@ -47,6 +55,40 @@ body{
     margin-bottom: 0;
 }
 
+.response h4{
+    font-size: 17pt;
+    color:#fff;
+    margin-right: 35pt;
+    margin-left: 35pt;
+    margin-bottom: 0;
+}
+
+/*Constitution Formatting*/
+.constitution p{
+    font-size: 14pt;
+    line-height: 1.5;       /* Spacing bw lines */
+    color: #fff;
+    /* margins left right*/
+    margin-right: 35pt;
+    margin-left: 35pt;
+}
+.constitution h3{
+    font-size: 20pt;
+    color:#fff;
+    margin-right: 25pt;
+    margin-left: 25pt;
+    margin-bottom: 0;
+}
+
+.constitution h4{
+    font-size: 15pt;
+    color:#fff;
+    line-height: .5pt; /*comfy spacing*/
+    margin-right: 35pt;
+    margin-left: 35pt;
+    margin-bottom: 0;
+}
+
 
 /* Cards grid */
 .cards{
@@ -54,11 +96,11 @@ body{
   margin:32px auto 72px;
   padding:0 16px;
   display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); /* https://www.w3schools.com/cssref/pr_grid-template-columns.php */
   gap:24px;
 }
 
-/* Flip cards */
+/* Flip cards https://freefrontend.com/css-flip-cards/ */
 .flip-card{
   perspective:1000px;
   height:220px;
@@ -68,7 +110,7 @@ body{
   height:100%;
   transform-style:preserve-3d;
   transition:transform .6s ease;
-  border-radius:var(--radius);
+  border-radius:var(--radius); /* https://docs.automaticcss.com/borders-dividers/global-border-system */
   box-shadow:var(--shadow);
 }
 .flip-card:hover .flip-card-inner{ transform: rotateY(180deg); }
