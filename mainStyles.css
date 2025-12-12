@@ -92,12 +92,13 @@ body{
 
 /* Cards grid */
 .cards{
-  max-width:1100px;
-  margin:32px auto 72px;
-  padding:0 16px;
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); /* https://www.w3schools.com/cssref/pr_grid-template-columns.php */
-  gap:24px;
+    max-width:1100px;
+    margin:32px auto 72px;
+    padding:0 16px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); /* https://www.w3schools.com/cssref/pr_grid-template-columns.php */
+    gap:24px;
+    justify-content: center;
 }
 
 /* Flip cards https://freefrontend.com/css-flip-cards/ */
